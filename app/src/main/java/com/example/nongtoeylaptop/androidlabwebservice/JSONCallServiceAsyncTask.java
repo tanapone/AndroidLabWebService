@@ -1,5 +1,6 @@
 package com.example.nongtoeylaptop.androidlabwebservice;
 
+import android.app.ProgressDialog;
 import android.os.AsyncTask;
 import android.util.Log;
 import org.json.JSONArray;
@@ -98,7 +99,6 @@ public class JSONCallServiceAsyncTask extends AsyncTask<String,String,String> {
                     menu.setMenuPrice(json.getDouble("price"));
                     menu.setMenuDiscription(json.getString("description"));
                     menu.setMenuImg("http://www.itsci.mju.ac.th/IT411Lab/images/"+json.getString("menu_id")+".png");
-
                     foodsList.add(menu);
                 }
             }

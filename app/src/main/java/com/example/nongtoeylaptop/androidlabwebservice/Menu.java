@@ -3,8 +3,8 @@ package com.example.nongtoeylaptop.androidlabwebservice;
 /**
  * Created by NongToey Laptop on 2/3/2018.
  */
-
-public class Menu {
+import java.io.Serializable;
+public class Menu implements Serializable{
     private String menuID;
     private String menuName;
     private Double menuPrice;
